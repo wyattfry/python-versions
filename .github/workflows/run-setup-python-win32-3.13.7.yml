@@ -1,0 +1,19 @@
+name: "Run setup-python (Windows x86, 3.13.7)"
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  setup-python-win32-3-13-7:
+    name: Run setup-python action on windows-latest (x86, 3.13.7)
+    runs-on: windows-latest
+
+    steps:
+      - name: Run setup-python action
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13.7"
+          architecture: "x86"
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
