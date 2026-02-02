@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Run setup-python action
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v2
         with:
           python-version: "3.13.7"
           architecture: "x86"
